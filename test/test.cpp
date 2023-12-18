@@ -1,8 +1,8 @@
 #include"gtest/gtest.h"
-#include"Addition.h"
-#include"Sub.h"
-#include"Mul.h"
-#include"Div.h"
+#include"code//Addition.h"
+#include"code//Sub.h"
+#include"code//Mul.h"
+#include"code//Div.h"
 
 
 
