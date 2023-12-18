@@ -26,9 +26,19 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
+cc_library(
+    name="lib5",
+    srcs=["Merge.cpp"],
+    hdrs=["Merge.h"],
+    deps=[":lib1",":lib2",":lib3",":lib4",],
+    visibility = ["//visibility:public"],
+    
+    
+)
+
 cc_binary(
     name = "Program",
     srcs = ["main.cpp"],
-    deps=[":lib1",":lib2",":lib3",":lib4",],
+    deps=[":lib1",":lib2",":lib3",":lib4",":lib5"],
 )
 
